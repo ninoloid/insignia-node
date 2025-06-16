@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insignia-node
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: insignia-node
+  template:
+    metadata:
+      labels:
+        app: insignia-node
+    spec:
+      containers:
+        - name: insignia-node
+          image: ninoloid/insignia-node:latest
+          ports:
+            - containerPort: 3000

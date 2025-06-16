@@ -29,6 +29,7 @@ jobs:
           tags: ninoloid/insignia-app:latest
 
       - name: Set up Kubeconfig
+        # TODO: change the KUBE_CONFIG_DATA with a real base64 encoded kube config from EKS, GKE, etc
         run: |
           mkdir -p $HOME/.kube
           echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 -d > $HOME/.kube/config

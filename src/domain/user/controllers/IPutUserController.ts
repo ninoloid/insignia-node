@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { IUser } from "../models/User";
 
 export interface PutUserRequestParam {
   id: string;

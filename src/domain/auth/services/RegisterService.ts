@@ -1,8 +1,6 @@
 import { HttpStatus } from "../../../common/constants/http.constant";
 import { BcryptService } from "../../../common/services/bcrypt.service";
-import { JWTService } from "../../../common/services/jwt.service";
 import { User } from "../../user/models/User";
-import { ILoginService, LoginResult } from "./ILoginService";
 import { IregisterService, RegisterResult } from "./IRegisterService";
 
 export class RegisterService implements IregisterService {

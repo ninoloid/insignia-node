@@ -12,4 +12,5 @@ RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+# uncomment this if you want to run directly by dockerfile
+# CMD ["npm", "start"]

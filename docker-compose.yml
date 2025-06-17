@@ -31,7 +31,7 @@ services:
       - ./:/usr/src/app
     working_dir: /usr/src/app
     # command: npm run start
-    command: npm run dev
+    command: npm start
 
 volumes:
   mongo-data:
